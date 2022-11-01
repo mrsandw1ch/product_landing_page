@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: rgb(226, 226, 226);
+    min-width: 500px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.btn {
+    background-color: rgb(255, 174, 0);
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(255, 136, 0);
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* HEADER */
+  
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    position: sticky;
+    top: 0;
+    background-color: rgb(226, 226, 226);
+}
+
+#header-img {
+    margin-top: 0.1rem;
+}
+
+#navbar {
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #header-img {
+        margin-bottom: 1rem;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+}
+
+#features, #how-it-works, #pricing {
+    scroll-margin: 85px;
+}
+
+@media only screen and (max-width: 600px) {
+    #features, #how-it-works, #pricing {
+        scroll-margin: 185px;
+    }
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1px;
+}
+
+#start {
+    text-align: center;
+}
+
+#email {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.5rem;
+    width: 60%;
+}
+
+#submit {
+    display: block;
+    margin: 1rem auto 6rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.5rem;
+}
+
+.feature:last-of-type {
+    margin-bottom: 6rem;
+}
+
+.feature-icon {
+    width: 20%;
+    text-align: center;
+    font-size: 6rem;
+    color: orange;
+}
+
+.feature-text {
+    width: 80%;
+    padding-right: 4rem;
+}
+
+@media only screen and (max-width: 550px) {
+    .feature-icon {
+        display: none;
+    }
+
+    .feature-text {
+        width: 100%;
+        padding: 0 4rem;
+        text-align: center;
+    }
+    
+}
+
+.feature-text > p {
+    padding: 0.2rem 0;
+    line-height: 2rem;
+}
+
+.empty {
+    display: none;
+}
+
+#how-it-works {
+    overflow: hidden;
+}
+
+#pricing {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.item {
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 4rem;
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 850px) {
+    #pricing {
+        grid-template-columns: 1fr;
+    }
+
+    .item {
+        width: 60%;
+    }
+
+}
+
+.item-name {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: lightgray;
+    padding: 2rem 0;
+}
+
+.item .price {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1.8rem auto;
+}
+
+.item-caption {
+    line-height: 4rem;
+    margin-bottom: 1.8rem;
+}
+
+.item .btn {
+    font-size: 2.2rem;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.6rem;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    max-width: 1000px;
+    text-align: right;
+    margin: auto;
+    background-color: lightgray;
+    padding: 2rem;
+}
+
+.footer-link {
+    display: inline;
+    margin: 0 2rem;
+    font-size: 1.4rem;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+}
+
+footer #copyright {
+    display: block;
+    padding-top: 1rem;
+    color: gray
+}
