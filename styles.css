@@ -245,5 +245,9 @@ footer {
 footer #copyright {
     display: block;
     padding-top: 1rem;
-    color: gray
+    color: gray;
+}
+
+footer #copyright > a {
+    color: gray;
 }
